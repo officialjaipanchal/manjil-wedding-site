@@ -3361,6 +3361,25 @@ a:focus {
   filter: grayscale(0);
 }
 
+.gallery-section .grid .gallery-caption {
+  margin-top: 10px;
+  font-size: 14px;
+  font-size: 0.77778rem;
+  color: #6e6e6e;
+  text-align: center;
+  font-style: italic;
+  line-height: 1.4;
+  padding: 0 5px;
+}
+
+@media (max-width: 767px) {
+  .gallery-section .grid .gallery-caption {
+    font-size: 13px;
+    font-size: 0.72222rem;
+    margin-top: 8px;
+  }
+}
+
 .gallery-section .video-play-btn {
   position: relative;
   display: block;
