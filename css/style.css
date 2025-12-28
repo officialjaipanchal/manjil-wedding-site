@@ -170,6 +170,14 @@ a:focus {
   z-index: 999999 !important;
 }
 
+@media (max-width: 767px) {
+  .fancybox-overlay:not(.fancybox-opened) {
+    display: none !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+  }
+}
+
 .fancybox-wrap {
   z-index: 99999 !important;
 }
@@ -3321,6 +3329,27 @@ a:focus {
     -o-filter: grayscale(0);
     -ms-filter: grayscale(0);
     filter: grayscale(0);
+  }
+  
+  .gallery-section .grid a {
+    background: transparent !important;
+    opacity: 1 !important;
+  }
+  
+  .gallery-section .grid a::before,
+  .gallery-section .grid a::after {
+    display: none !important;
+    content: none !important;
+  }
+  
+  .gallery-section .grid {
+    background: transparent !important;
+  }
+  
+  .gallery-section .grid::before,
+  .gallery-section .grid::after {
+    display: none !important;
+    content: none !important;
   }
 }
 
